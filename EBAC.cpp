@@ -113,6 +113,7 @@ int main(){ //Função principal da aplicação. Tudo que estiver dentro de MAIN, se
 		printf("\t1- Registrar Nomes \n");
 		printf("\t2- Consultar Nomes \n");
 		printf("\t3- Deletar Nomes \n");
+		printf("\t4- Sair \n");
 		printf("Opção: ");
 		
 		scanf("%d", &opcao);
@@ -130,6 +131,11 @@ int main(){ //Função principal da aplicação. Tudo que estiver dentro de MAIN, se
 				
 			case 3:
 				deletar();
+				break;
+				
+			case 4:
+				printf("Obrigado por usar nosso sistema! \n");
+				return 0;
 				break;
 				
 			default:
